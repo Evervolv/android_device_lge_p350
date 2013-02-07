@@ -38,6 +38,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/root/ueventd.pecan.rc:root/ueventd.pecan.rc \
     $(LOCAL_PATH)/root/init.pecan.usb.rc:root/init.pecan.usb.rc
 
+# Kernel Modules
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilt/wireless.ko:system/lib/modules/wireless.ko \
+    $(LOCAL_PATH)/prebuilt/tun.ko:system/lib/modules/tun.ko \
+    $(LOCAL_PATH)/prebuilt/fuse.ko:system/lib/modules/fuse.ko \
+    $(LOCAL_PATH)/prebuilt/cifs.ko:system/lib/modules/cifs.ko 
+
 # Configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/7k_handset.kl:system/usr/keylayout/7k_handset.kl \
