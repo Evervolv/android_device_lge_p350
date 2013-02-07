@@ -38,8 +38,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Prepare for new BootAnimation
 TARGET_BOOTANIMATION_NAME := vertical-240x320
 
-# Inherit some common cyanogenmod stuff.
-$(call inherit-product, vendor/ev/config/common_mini_phone.mk)
+# Inherit some common evervolv stuff.
+$(call inherit-product, vendor/ev/config/common_small_phone.mk)
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
